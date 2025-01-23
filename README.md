@@ -1,0 +1,3 @@
+# Unhandled Exception Masking ZeroDivisionError
+
+This repository demonstrates a scenario where an exception is handled, but another unexpected error occurs afterwards, potentially masking the real issue.  The main function attempts to handle a `ZeroDivisionError`, but if this happens, a further error occurs due to the `print(result)` statement referencing a value that's never returned due to the exception handling.
